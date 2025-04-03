@@ -1,0 +1,57 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+jQuery(document).ready(function($) {
+	// prepare calendar for popups
+	$("table.tec-calendar tbody tr").each(function(index) {
+		// add a class of "right" to Friday & Saturday so tooltips stay onscreen
+		$(this).find("td:gt(3)").addClass("tec-right");
+	});
+
+	// popups
+	$("table.tec-calendar .tec-event a").hover(function() {
+		
+		// one for IE6, one for everybody else
+		if ($.browser.msie && $.browser.version == 6.0) {
+			var bottomPad = $(this).parents("td").outerHeight() + 5;
+		}
+		else {
+			var bottomPad = $(this).outerHeight() + 18;
+		}
+		
+		$(this).next(".tec-tooltip").css('bottom', bottomPad).fadeIn(300);
+	}, function() {
+		$(this).next(".tec-tooltip").fadeOut(100);
+	});
+});
+
+}
+/*
+     FILE ARCHIVED ON 23:51:42 Sep 13, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:52:04 Apr 03, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.481
+  exclusion.robots: 0.02
+  exclusion.robots.policy: 0.012
+  esindex: 0.01
+  cdx.remote: 98.759
+  LoadShardBlock: 124.688 (3)
+  PetaboxLoader3.datanode: 143.766 (4)
+  load_resource: 114.787
+  PetaboxLoader3.resolve: 83.258
+*/
