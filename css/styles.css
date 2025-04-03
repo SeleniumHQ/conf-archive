@@ -155,3 +155,30 @@ body {
 [data-theme="dark"] .btn:hover {
     background-color: #369321;
 }
+
+.card-content .btn {
+    display: inline-block;
+    margin: 12px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.card-extras {
+    margin-top: 6px; /* tighter spacing */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card-extras .btn-secondary {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    border-radius: 4px;
+}
+
+.card-extras .btn-secondary:hover {
+    background-color: #a5d6a7;
+}
