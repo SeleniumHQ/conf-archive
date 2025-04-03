@@ -112,37 +112,46 @@ body {
     text-decoration: underline;
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #ddd;
-    }
+#theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    color: inherit;
+}
 
-    .hero {
-        background-color: #1f1f1f;
-        color: #ffffff;
-    }
+[data-theme="dark"] body {
+    background-color: #121212;
+    color: #ddd;
+}
 
-    .card {
-        background: #1c1c1c;
-        color: #eee;
-    }
+[data-theme="dark"] .hero {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
 
-    .card p {
-        color: #bbb;
-    }
+[data-theme="dark"] .card {
+    background: #1c1c1c;
+    color: #eee;
+}
 
-    .footer {
-        color: #aaa;
-    }
+[data-theme="dark"] .card p {
+    color: #bbb;
+}
 
-    .btn {
-        background-color: #43b02a;
-        color: white;
-    }
+[data-theme="dark"] .footer {
+    color: #aaa;
+}
 
-    .btn:hover {
-        background-color: #369321;
-    }
+[data-theme="dark"] .btn {
+    background-color: #43b02a;
+    color: white;
+}
+
+[data-theme="dark"] .btn:hover {
+    background-color: #369321;
 }

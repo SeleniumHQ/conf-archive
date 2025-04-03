@@ -11,6 +11,9 @@
 </head>
 <body>
 <header class="hero">
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+        🌙
+    </button>
     <div class="container">
         <h1>Selenium Conference Archive</h1>
         <p>Explore previous editions of SeleniumConf from around the world.</p>
@@ -41,5 +44,28 @@
         <a href="https://seleniumconf.com" target="_blank">Current Conference</a>
     </p>
 </footer>
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const storedTheme = localStorage.getItem('theme');
+
+    const applyTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        toggleBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
+    };
+
+    if (storedTheme) {
+        applyTheme(storedTheme);
+    } else if (prefersDark) {
+        applyTheme('dark');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', next);
+        applyTheme(next);
+    });
+</script>
 </body>
 </html>
