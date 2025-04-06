@@ -3,6 +3,19 @@ const path = require("path");
 const cheerio = require("cheerio");
 const fse = require("fs-extra");
 
+const inputRoot = process.argv[2];
+const domainTLD = process.argv[3];
+
+if (!inputRoot || !domainTLD) {
+    console.error("❌ Usage: node clean-wayback.js <edition-folder> <com|org>");
+    console.error("   Example: node clean-wayback.js editions/sf2011 com");
+    console.error("         or: node clean-wayback.js editions/london2012 org");
+    process.exit(1);
+}
+
+const BASE_DOMAIN = `www.seleniumconf.${domainTLD}`;
+const resolvedRoot = path.resolve(inputRoot);
+
 const rewriteMap = {
     js: "js",
     cs: "css",
@@ -36,7 +49,7 @@ function flattenFolder(folderPath) {
 
     let basePath = null;
     for (const folderName of possibleHttpFolders) {
-        const candidate = path.join(folderPath, folderName, "www.seleniumconf.com");
+        const candidate = path.join(folderPath, folderName, BASE_DOMAIN);
         if (fs.existsSync(candidate)) {
             basePath = candidate;
             break;
@@ -56,7 +69,6 @@ function flattenFolder(folderPath) {
         fse.moveSync(src, dest, { overwrite: true });
     });
 
-    // Remove all possible leftover http or http:
     possibleHttpFolders.forEach((name) => {
         const candidate = path.join(folderPath, name);
         if (fs.existsSync(candidate)) {
@@ -86,9 +98,9 @@ function cleanIndexHtml(htmlPath) {
             if (!val) return;
 
             const mappings = [
-                { match: /.*?(\d{14})cs_\/http[:]?\/www\.seleniumconf\.com\//, replaceWith: "css/" },
-                { match: /.*?(\d{14})js_\/http[:]?\/www\.seleniumconf\.com\//, replaceWith: "js/" },
-                { match: /.*?(\d{14})im_\/http[:]?\/www\.seleniumconf\.com\//, replaceWith: "images/" }
+                { match: new RegExp(`.*?(\\d{14})cs_/http[:]?/${BASE_DOMAIN}/`), replaceWith: "css/" },
+                { match: new RegExp(`.*?(\\d{14})js_/http[:]?/${BASE_DOMAIN}/`), replaceWith: "js/" },
+                { match: new RegExp(`.*?(\\d{14})im_/http[:]?/${BASE_DOMAIN}/`), replaceWith: "images/" }
             ];
 
             let newVal = val;
@@ -120,23 +132,21 @@ function cleanIndexHtml(htmlPath) {
 
         if (!href || href.startsWith("#") || href.startsWith("mailto:")) return;
 
-        const fullArchive = href.match(/https?:\/\/web\.archive\.org\/web\/\d+\/http:\/\/www\.seleniumconf\.com\/(.*)/);
-        const shortArchive = href.match(/\/web\/\d+\/http:\/\/www\.seleniumconf\.com\/(.*)/);
+        const domainRegex = BASE_DOMAIN.replace(/\./g, "\\.");
+        const fullArchive = href.match(new RegExp(`https?://web\\.archive\\.org/web/\\d+/http://${domainRegex}/(.*)`));
+        const shortArchive = href.match(new RegExp(`/web/\\d+/http://${domainRegex}/(.*)`));
         const matchedPath = fullArchive?.[1] || shortArchive?.[1];
 
-        // ✅ Special case for "Home"
+        // Special case: Home
         if (text === "Home") {
             const currentDir = path.dirname(htmlPath);
             let relToRoot = path.relative(currentDir, resolvedRoot).replace(/\\/g, "/");
-            if (relToRoot === "") relToRoot = "./";
-            else relToRoot += "/";
+            relToRoot = relToRoot === "" ? "./" : relToRoot + "/";
             $(el).attr("href", relToRoot);
             return;
         }
 
-        if (!matchedPath) {
-            return; // ✅ Already a relative link — leave as-is
-        }
+        if (!matchedPath) return; // Skip already-correct relative links
 
         const cleanTarget = matchedPath.replace(/^\/+/, "").replace(/index\.html$/, "").replace(/\/+$/, "");
         const targetAbsPath = path.resolve(resolvedRoot, cleanTarget);
@@ -150,37 +160,16 @@ function cleanIndexHtml(htmlPath) {
     });
 
     fs.writeFileSync(htmlPath, $.html(), "utf8");
-    console.log(`✅ Cleaned ${path.relative(process.cwd(), htmlPath)}`);
+    console.log(`✅ Cleaned ${path.relative(resolvedRoot, htmlPath)}`);
 }
 
-function recursivelyCleanAllIndexHtmlFiles(dir) {
-    fs.readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
-        const fullPath = path.join(dir, entry.name);
-        if (entry.isDirectory()) {
-            recursivelyCleanAllIndexHtmlFiles(fullPath);
-        } else if (entry.isFile() && entry.name.toLowerCase() === "index.html") {
-            cleanIndexHtml(fullPath);
-        }
-    });
-}
-
-// === MAIN ===
-
-const inputRoot = process.argv[2];
-if (!inputRoot) {
-    console.error("❌ Usage: node clean-wayback.js <edition-folder>");
-    process.exit(1);
-}
-
-const resolvedRoot = path.resolve(inputRoot);
 const archiveDir = path.join(resolvedRoot, "web.archive.org", "web");
-
 if (!fs.existsSync(archiveDir)) {
     console.error("❌ Could not find web.archive.org/web in", resolvedRoot);
     process.exit(1);
 }
 
-// Snapshot
+// Find snapshot folder
 const snapshotFolder = fs.readdirSync(archiveDir).find(name =>
     /^\d{14}$/.test(name) && fs.statSync(path.join(archiveDir, name)).isDirectory()
 );
@@ -190,7 +179,7 @@ if (!snapshotFolder) {
 }
 const snapshotPath = path.join(archiveDir, snapshotFolder);
 
-// Clean main index.html
+// Find and clean main index.html
 const indexPath = findIndexHtml(snapshotPath);
 if (!indexPath) {
     console.error("❌ Could not find index.html in snapshot");
@@ -199,7 +188,7 @@ if (!indexPath) {
 console.log("📄 Found index.html at", path.relative(resolvedRoot, indexPath));
 cleanIndexHtml(indexPath);
 
-// Move entire snapshot content to edition root
+// Move all content from snapshot folder
 const htmlRoot = path.dirname(indexPath);
 console.log("📦 Moving full static site content...");
 
@@ -230,7 +219,7 @@ fs.readdirSync(archiveDir).forEach(name => {
     }
 });
 
-// Flatten css/js/images
+// Flatten folders
 ["css", "js", "images"].forEach(type => {
     const folder = path.join(resolvedRoot, type);
     if (fs.existsSync(folder)) {
@@ -238,7 +227,18 @@ fs.readdirSync(archiveDir).forEach(name => {
     }
 });
 
-// Clean all index.html files recursively
-recursivelyCleanAllIndexHtmlFiles(resolvedRoot);
+// Recursively clean all index.html files
+function cleanAllHtmls(rootDir) {
+    const entries = fs.readdirSync(rootDir, { withFileTypes: true });
+    for (const entry of entries) {
+        const fullPath = path.join(rootDir, entry.name);
+        if (entry.isDirectory()) {
+            cleanAllHtmls(fullPath);
+        } else if (entry.name.toLowerCase() === "index.html") {
+            cleanIndexHtml(fullPath);
+        }
+    }
+}
+cleanAllHtmls(resolvedRoot);
 
 console.log("🎉 All done!");
