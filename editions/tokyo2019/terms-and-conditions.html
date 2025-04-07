@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SeleniumConf Tokyo 2019 - SeleniumConf Tokyo 2019</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link id="wsite-base-style" rel="stylesheet" type="text/css"
+		  href="css/cdn2.editmysite.com/css/sites.css">
+	<link rel="stylesheet" type="text/css"
+		  href="css/cdn2.editmysite.com/css/old/fancybox.css">
+	<link rel="stylesheet" type="text/css"
+		  href="css/cdn2.editmysite.com/css/social-icons.css"
+		  media="screen,projection">
+	<link rel="stylesheet" type="text/css"
+		  href="css/conf.selenium.jp/files/main_style.css"
+		  title="wsite-theme-css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {
+			font-family: "Roboto" !important;
+		}
+
+		#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {
+			color: #626262 !important;
+		}
+
+		.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label {
+			font-family: "Roboto" !important;
+		}
+
+		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {
+			font-family: "Roboto" !important;
+		}
+
+		#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {
+			color: #d5d5d5 !important;
+		}
+
+		.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title {
+			font-family: "Roboto" !important;
+			color: #818181 !important;
+			text-transform: uppercase !important;
+		}
+
+		#wsite-title {
+			font-family: "Roboto" !important;
+			font-style: normal !important;
+		}
+
+		.wsite-menu-default a {
+			font-family: "Roboto" !important;
+			text-transform: uppercase !important;
+		}
+
+		.wsite-menu a {
+			font-family: "Roboto" !important;
+		}
+
+		.wsite-image div, .wsite-caption {
+			font-family: "Roboto" !important;
+		}
+
+		.galleryCaptionInnerText {
+			font-family: "Roboto" !important;
+		}
+
+		.fancybox-title {
+			font-family: "Roboto" !important;
+		}
+
+		.wslide-caption-text {
+		}
+
+		.wsite-phone {
+			font-family: "Roboto" !important;
+		}
+
+		.wsite-headline, .wsite-header-section .wsite-content-title {
+			font-family: "Roboto" !important;
+			color: #ad2d33 !important;
+			letter-spacing: -3px !important;
+		}
+
+		.wsite-headline-paragraph, .wsite-header-section .paragraph {
+			font-family: "Roboto" !important;
+			text-transform: none !important;
+			letter-spacing: 0px !important;
+		}
+
+		.wsite-button-inner {
+			font-family: "Roboto" !important;
+		}
+
+		.wsite-not-footer blockquote {
+			font-family: "Roboto" !important;
+		}
+
+		.wsite-footer blockquote {
+			font-family: "Roboto" !important;
+		}
+
+		.blog-header h2 a {
+		}
+
+		#wsite-content h2.wsite-product-title {
+			font-family: "Roboto" !important;
+		}
+
+		.wsite-product .wsite-product-price a {
+		}
+
+		@media screen and (min-width: 767px) {
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {
+				font-size: 16px !important;
+			}
+
+			#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {
+			}
+
+			.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label {
+			}
+
+			.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {
+				font-size: 98px !important;
+			}
+
+			#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {
+			}
+
+			.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title {
+				font-size: 10px !important;
+			}
+
+			#wsite-title {
+				font-size: 30px !important;
+			}
+
+			.wsite-menu-default a {
+				font-size: 13px !important;
+			}
+
+			.wsite-menu a {
+			}
+
+			.wsite-image div, .wsite-caption {
+			}
+
+			.galleryCaptionInnerText {
+			}
+
+			.fancybox-title {
+			}
+
+			.wslide-caption-text {
+			}
+
+			.wsite-phone {
+			}
+
+			.wsite-headline, .wsite-header-section .wsite-content-title {
+				font-size: 98px !important;
+			}
+
+			.wsite-headline-paragraph, .wsite-header-section .paragraph {
+				font-size: 18px !important;
+				line-height: 34px !important;
+			}
+
+			.wsite-button-inner {
+			}
+
+			.wsite-not-footer blockquote {
+			}
+
+			.wsite-footer blockquote {
+			}
+
+			.blog-header h2 a {
+			}
+
+			#wsite-content h2.wsite-product-title {
+			}
+
+			.wsite-product .wsite-product-price a {
+			}
+		}</style>
+
+	<script src="js/ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/cdn2.editmysite.com/js/lang/en/stl.js"></script>
+	<script src="js/cdn2.editmysite.com/js/site/main.js"></script>
+	<script type="text/javascript">
+		function initCustomerAccountsModels() {
+			(function () {
+				_W.setup_rpc({
+					"url": "\/ajax\/api\/JsonRPC\/CustomerAccounts\/",
+					"actions": {
+						"CustomerAccounts": [{
+							"name": "login",
+							"len": 2,
+							"multiple": false,
+							"standalone": false
+						}, {
+							"name": "logout",
+							"len": 0,
+							"multiple": false,
+							"standalone": false
+						}, {
+							"name": "getSessionDetails",
+							"len": 0,
+							"multiple": false,
+							"standalone": false
+						}, {
+							"name": "getAccountDetails",
+							"len": 0,
+							"multiple": false,
+							"standalone": false
+						}, {"name": "getOrders", "len": 0, "multiple": false, "standalone": false}, {
+							"name": "register",
+							"len": 4,
+							"multiple": false,
+							"standalone": false
+						}, {
+							"name": "emailExists",
+							"len": 1,
+							"multiple": false,
+							"standalone": false
+						}, {
+							"name": "passwordReset",
+							"len": 1,
+							"multiple": false,
+							"standalone": false
+						}, {
+							"name": "passwordUpdate",
+							"len": 3,
+							"multiple": false,
+							"standalone": false
+						}, {"name": "validateSession", "len": 1, "multiple": false, "standalone": false}]
+					},
+					"namespace": "_W.CustomerAccounts.RPC"
+				});
+				_W.setup_model_rpc({
+					"rpc_namespace": "_W.CustomerAccounts.RPC",
+					"model_namespace": "_W.CustomerAccounts.BackboneModelData",
+					"collection_namespace": "_W.CustomerAccounts.BackboneCollectionData",
+					"bootstrap_namespace": "_W.CustomerAccounts.BackboneBootstrap",
+					"models": {
+						"CustomerAccounts": {
+							"_class": "CustomerAccounts.Model.CustomerAccounts",
+							"defaults": null,
+							"validation": null,
+							"types": null,
+							"idAttribute": null,
+							"keydefs": null
+						}
+					},
+					"collections": {"CustomerAccounts": {"_class": "CustomerAccounts.Collection.CustomerAccounts"}},
+					"bootstrap": []
+				});
+			})();
+		}
+
+		if (document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if (document.documentElement.initCustomerAccountsModels === 0) {
+			document.documentElement.initCustomerAccountsModels++
+		}
+	</script>
+	<script type="text/javascript"> _W = _W || {};
+	_W.securePrefix = 'conf.selenium.jp'; </script>
+	<script>_W = _W || {};
+	_W.customerLocale = "en_GB";
+	_W.storeName = null;
+	_W.storeCountry = "JP";
+	_W.storeCurrency = "JPY";
+	_W.storeEuPrivacyPolicyUrl = "";
+	com_currentSite = "817248050108130958";
+	com_userID = "120229834";</script>
+	<script type="text/javascript">_W.configDomain = "www.weebly.com";</script>
+	<script>_W.relinquish && _W.relinquish()</script>
+	<script type="text/javascript"
+			src="js/cdn2.editmysite.com/js/lang/en/stl.js"></script>
+	<script> _W.themePlugins = [];</script>
+	<script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script>
+	<script type="text/javascript"><!--
+
+
+	function initFlyouts() {
+		initPublishedFlyoutMenus(
+				[{
+					"id": "955487992922119958",
+					"title": "HOME",
+					"url": "index.html",
+					"target": "",
+					"nav_menu": false,
+					"nonclickable": false
+				}, {
+					"id": "240987389721106026",
+					"title": "Sponsors",
+					"url": "sponsors.html",
+					"target": "",
+					"nav_menu": false,
+					"nonclickable": false
+				}, {
+					"id": "330040605615730631",
+					"title": "TALKS",
+					"url": "talks.html",
+					"target": "",
+					"nav_menu": false,
+					"nonclickable": false
+				}, {
+					"id": "866844845769624219",
+					"title": "SCHEDULE",
+					"url": "schedule.html",
+					"target": "",
+					"nav_menu": false,
+					"nonclickable": false
+				}, {
+					"id": "737595091935782183",
+					"title": "WORKSHOP",
+					"url": "workshop.html",
+					"target": "",
+					"nav_menu": false,
+					"nonclickable": false
+				}, {
+					"id": "246206253790088403",
+					"title": "VENUE",
+					"url": "venue.html",
+					"target": "",
+					"nav_menu": false,
+					"nonclickable": false
+				}],
+				"955487992922119958",
+				'',
+				'active',
+				false,
+				{
+					"navigation\/item": "<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n",
+					"navigation\/flyout\/list": "<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n",
+					"navigation\/flyout\/item": "<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"
+				},
+				{}
+		)
+	}
+
+	//-->
+	</script>
+
+	<script async=""
+			src="js/static.zotabox.com/b/8/b86f466f4d0db0bef20f068cc5270ae0/widgets.js"></script>
+</head>
+<body class="header-page  wsite-page-terms-and-conditions  full-width-body-off header-overlay-on alt-nav-off  wsite-theme-light">
+<div class="wrapper">
+    <div class="birdseye-header">
+        <div class="nav-wrap">
+            <div class="container">
+                <div class="logo"><span class="wsite-logo">
+
+	<a href="index.html">
+		<img src="images/uploads/1/2/0/2/120229834/seleniumconftokyo-600pixel-per-inch-transperency_1.png"
+			 alt="SeleniumConf Tokyo 2019">
+	</a>
+
+</span></div>
+				<div class="nav desktop-nav">
+					<ul class="wsite-menu-default">
+						<li id="active" class="wsite-menu-item-wrap">
+							<a href="index.html" class="wsite-menu-item">
+								HOME
+							</a>
+
+						</li>
+						<li id="pg240987389721106026" class="wsite-menu-item-wrap">
+							<a href="sponsors.html" class="wsite-menu-item">
+								Sponsors
+							</a>
+
+						</li>
+						<li id="pg330040605615730631" class="wsite-menu-item-wrap">
+							<a href="talks.html" class="wsite-menu-item">
+								TALKS
+							</a>
+
+						</li>
+						<li id="pg866844845769624219" class="wsite-menu-item-wrap">
+							<a href="schedule.html" class="wsite-menu-item">
+								SCHEDULE
+							</a>
+
+						</li>
+						<li id="pg737595091935782183" class="wsite-menu-item-wrap">
+							<a href="workshop.html" class="wsite-menu-item">
+								WORKSHOP
+							</a>
+
+						</li>
+						<li id="pg246206253790088403" class="wsite-menu-item-wrap">
+							<a href="venue.html" class="wsite-menu-item">
+								VENUE
+							</a>
+
+						</li>
+					</ul>
+				</div>
+                <label class="hamburger"><span></span></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-wrap">
+        <div class="wsite-elements wsite-not-footer wsite-header-elements">
+            <div class="wsite-section-wrap">
+                <div class="wsite-section wsite-header-section wsite-section-bg-color"
+                     style="vertical-align: middle;height: auto;background-color: #fff;background-image: none;is_customized: 1;">
+                    <div class="wsite-section-content">
+
+                        <div class="container">
+                            <div class="banner">
+                                <div class="wsite-section-elements">
+                                    <div class="paragraph"><font size="7" color="#ad2d33">Terms &amp; Conditions</font>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=""></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="main-wrap">
+        <div id="wsite-content" class="wsite-elements wsite-not-footer">
+            <div class="wsite-section-wrap">
+                <div class="wsite-section wsite-body-section wsite-background-28">
+                    <div class="wsite-section-content">
+                        <div class="container">
+                            <div class="wsite-section-elements">
+                                <div>
+                                    <div class="wsite-multicol">
+                                        <div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+                                            <table class="wsite-multicol-table">
+                                                <tbody class="wsite-multicol-tbody">
+                                                <tr class="wsite-multicol-tr">
+                                                    <td class="wsite-multicol-col"
+                                                        style="width:14.344618984434%; padding:0 15px;">
+
+
+                                                        <div class="wsite-spacer" style="height:50px;"></div>
+
+
+                                                    </td>
+                                                    <td class="wsite-multicol-col"
+                                                        style="width:78.343336294725%; padding:0 15px;">
+
+
+                                                        <div class="paragraph" style="text-align:left;"><strong><font
+                                                                size="5">&#8203;Transferring your
+                                                            place</font></strong><br/><font size="4">We&rsquo;ll happily
+                                                            transfer your place to a lucky colleague or friend if you
+                                                            need to.<br/>Please let us know as soon as possible and
+                                                            ideally no later than 2 April 2019 &ndash; email <a
+                                                                    href="https://web.archive.org/web/20200805214441/mailto:conference-contact@selenium.jp">conference-contact@selenium.jp</a>
+                                                            .</font><br/><font size="4">If for any reason you can&rsquo;t
+                                                            attend at all, you&rsquo;ll need to let us know no later
+                                                            than 25 February 2019. Refunds will not be made after this
+                                                            date.</font><br/><br/><strong><font size="5">Photos &amp;
+                                                            footage</font></strong><br/><font size="4">We photograph and
+                                                            film all of our events and by registering you give us
+                                                            permission to use any images or footage taken of you on the
+                                                            day. We also reserve the right to reproduce quotes and
+                                                            feedback which will be fully
+                                                            credited.</font><br/><br/><strong><font size="5">Accessibility</font></strong><br/><font
+                                                                size="4">If you have any requirements you think we
+                                                            should be aware of, please let us
+                                                            know.</font><br/><br/><strong><font size="5">Social
+                                                            media</font></strong><br/><font size="4">We reserve the
+                                                            right to reproduce quotes and feedback submitted in a public
+                                                            sphere, which will be fully
+                                                            credited.</font><br/><br/><strong><font
+                                                                size="5">Programme</font></strong><br/><font size="4">From
+                                                            time to time a speaker may drop out of our conference
+                                                            programme as we&rsquo;ve advertised it and we reserve the
+                                                            right to substitute them for another equally awesome
+                                                            individual.<br/>We know you won&rsquo;t be
+                                                            disappointed!</font><br/><br/><strong><font
+                                                                size="5">Privacy</font></strong><br/><font size="4">We
+                                                            take your privacy very seriously and will not sell or share
+                                                            your personal information with sponsors or third parties.
+                                                            Sponsors may request to gather your details on the day of
+                                                            the conference but your permission will be sought and the
+                                                            information gathered from you
+                                                            directly.</font><br/><br/><strong><font size="5">Code of
+                                                            Conduct</font></strong><br/><font size="4">Every attendee,
+                                                            sponsor and speaker, by virtue of purchasing a ticket or
+                                                            attending, agrees to comply in full with our conference <a
+                                                                    href="code-of-conduct.html">code
+                                                                of conduct</a>.</font></div>
+
+
+                                                    </td>
+                                                    <td class="wsite-multicol-col"
+                                                        style="width:7.312044720841%; padding:0 15px;">
+
+
+                                                        <div class="wsite-spacer" style="height:50px;"></div>
+
+
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-wrap">
+        <div class="footer">
+            <div class="wsite-elements wsite-footer">
+                <div>
+                    <div class="wsite-multicol">
+                        <div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+                            <table class="wsite-multicol-table">
+                                <tbody class="wsite-multicol-tbody">
+                                <tr class="wsite-multicol-tr">
+                                    <td class="wsite-multicol-col" style="width:17.733473242392%; padding:0 15px;">
+
+
+                                        <div class="paragraph"><a
+                                                href="code-of-conduct.html">Code
+                                            of Conduct</a></div>
+
+
+                                    </td>
+                                    <td class="wsite-multicol-col" style="width:82.266526757608%; padding:0 15px;">
+
+
+                                        <div>
+                                            <div class="wsite-multicol">
+                                                <div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+                                                    <table class="wsite-multicol-table">
+                                                        <tbody class="wsite-multicol-tbody">
+                                                        <tr class="wsite-multicol-tr">
+                                                            <td class="wsite-multicol-col"
+                                                                style="width:17.984693877551%; padding:0 15px;">
+
+
+                                                                <div class="paragraph"><a
+                                                                        href="data-promise.html">Data
+                                                                    Promise</a></div>
+
+
+                                                            </td>
+                                                            <td class="wsite-multicol-col"
+                                                                style="width:82.015306122449%; padding:0 15px;">
+
+
+                                                                <div class="paragraph"><a
+                                                                        href="terms-and-conditions.html">Terms &amp;
+                                                                    Conditions</a><br/></div>
+
+
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wsite-spacer" style="height:17px;"></div>
+
+                <div class="paragraph" style="text-align:center;">Copyright &copy; 2019</div>
+            </div>
+        </div>
+    </div><!-- end footer-wrap -->
+</div><!-- /.wrapper -->
+
+<div id="navMobile" class="nav mobile-nav">
+	<label class="hamburger"><span></span></label>
+	<ul class="wsite-menu-default">
+		<li id="active" class="wsite-menu-item-wrap">
+			<a href="index.html" class="wsite-menu-item">
+				HOME
+			</a>
+
+		</li>
+		<li id="pg240987389721106026" class="wsite-menu-item-wrap">
+			<a href="sponsors.html" class="wsite-menu-item">
+				Sponsors
+			</a>
+
+		</li>
+		<li id="pg330040605615730631" class="wsite-menu-item-wrap">
+			<a href="talks.html" class="wsite-menu-item">
+				TALKS
+			</a>
+
+		</li>
+		<li id="pg866844845769624219" class="wsite-menu-item-wrap">
+			<a href="schedule.html" class="wsite-menu-item">
+				SCHEDULE
+			</a>
+
+		</li>
+		<li id="pg737595091935782183" class="wsite-menu-item-wrap">
+			<a href="workshop.html" class="wsite-menu-item">
+				WORKSHOP
+			</a>
+
+		</li>
+		<li id="pg246206253790088403" class="wsite-menu-item-wrap">
+			<a href="venue.html" class="wsite-menu-item">
+				VENUE
+			</a>
+
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript"
+		src="js/conf.selenium.jp/files/theme/plugins.js"></script>
+<script type="text/javascript"
+		src="js/conf.selenium.jp/files/theme/custom.js"></script>
+<div id="customer-accounts-app"></div>
+<script src="js/cdn2.editmysite.com/js/site/main-customer-accounts-site.js"></script>
+
+
+<script>
+    (function (jQuery) {
+        try {
+            if (jQuery) {
+                jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
+                var $commentFrame = jQuery('#commentArea iframe');
+                if ($commentFrame.length > 0) {
+                    var frameHeight = jQuery($commentFrame[0].contentWindow.document).height() + 50;
+                    $commentFrame.css('min-height', frameHeight + 'px');
+                }
+                if (jQuery('.product-button').length > 0) {
+                    jQuery(document).ready(function () {
+                        jQuery('.product-button').parent().each(function (index, product) {
+                            if (jQuery(product).attr('target') == 'paypal') {
+                                if (!jQuery(product).find('> [name="bn"]').length) {
+                                    jQuery('<input>').attr({
+                                        type: 'hidden',
+                                        name: 'bn',
+                                        value: 'DragAndDropBuil_SP_EC'
+                                    }).appendTo(product);
+                                }
+                            }
+                        });
+                    });
+                }
+            } else {
+                // Prototype
+                $$('div.blog-social div.fb-like').each(function (div) {
+                    div.className = 'blog-social-item blog-fb-like';
+                });
+                $$('#commentArea iframe').each(function (iframe) {
+                    iframe.style.minHeight = '410px';
+                });
+            }
+        } catch (ex) {
+        }
+    })(window._W && _W.jQuery);
+</script>
+
+<script>
+    window._W.isEUUser = false;
+    window._W.showCookieToAll = "";
+</script>
+
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 21:44:41 Aug 05, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:10:19 Apr 06, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.552
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.009
+  esindex: 0.013
+  cdx.remote: 54.684
+  LoadShardBlock: 253.015 (3)
+  PetaboxLoader3.resolve: 203.084 (2)
+  PetaboxLoader3.datanode: 170.525 (4)
+  load_resource: 246.974
+-->
