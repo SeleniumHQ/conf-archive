@@ -21,9 +21,16 @@ body {
 }
 
 .hero-logo {
-    max-width: 400px;
-    height: auto;
+    max-width: 80%; /* Scales the logo to fit within 80% of the container */
+    width: 100%; /* Ensures it doesn't exceed the container width */
+    height: auto; /* Maintains aspect ratio */
     margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .hero-logo {
+        max-width: 60%; /* Further reduce size for smaller screens */
+    }
 }
 
 .hero h1 {
