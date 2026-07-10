@@ -1,0 +1,75 @@
+{
+    "key": "group_5abbd324f364c",
+    "title": "Custom Code",
+    "fields": [
+        {
+            "key": "field_5abbd335b77be",
+            "label": "Header",
+            "name": "pageCodeHeader",
+            "type": "acf_code_field",
+            "instructions": "Before closing &lt;head&gt; tag — CSS generally goes here.<br>\r\nBe sure to include <code>&lt;style&gt;&lt;\/style&gt;<\/code><br>\r\nSite breakpoints are 38rem (608px \/ sm), 64em (928px \/ md), 90em (1280px \/ lg) for use such as:<br>\r\n<code style=\"display: inline-block;\">@media only screen and (min-width: 64em) { \/* your CSS *\/ }<\/code>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "mode": "htmlmixed",
+            "theme": "xq-light"
+        },
+        {
+            "key": "field_5abbd38db77bf",
+            "label": "Footer",
+            "name": "pageCodeFooter",
+            "type": "acf_code_field",
+            "instructions": "Before closing &lt;body&gt; tag — JavaScript generally goes here.<br>\r\nBe sure to include <code>&lt;script>&lt;\/script&gt;<\/code> tags.<br>\r\nSite breakpoints are 38rem (608px \/ sm), 64em (928px \/ md), 90em (1280px \/ lg) for use such as:<br>\r\n<code style=\"display: inline-block;\">@media only screen and (min-width: 64em) { \/* your CSS *\/ }<\/code>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "mode": "htmlmixed",
+            "theme": "xq-light"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "common"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661753890
+}

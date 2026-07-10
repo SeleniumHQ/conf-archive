@@ -1,0 +1,60 @@
+/* -----------------------------------
+Styling the Wordpress WYSIWYG visual editors
+
+Must be enabled within functions.php, such as:
+
+function add_editor_styles() {
+  add_editor_style( 'wp-editor.css' );
+}
+add_action( 'init', 'add_editor_styles' );
+----------------------------------- */
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.75rem 0 1.25rem;
+  font-weight: 600;
+}
+
+h1 { font-size: 1.7rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.3rem; }
+h6 { font-size: 1.2rem; }
+
+/* if two headings are next to each other */
+h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6,
+h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6,
+h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6,
+h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6,
+h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6,
+h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6 {
+  margin-top: -.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.text-large { font-size: 1.1rem; }
+.text-meta { font-size: .8rem; }
+
+/* Show what classes are being added to elements (excluding some WP items that we don't want to see) */
+*:not(body):not([id*=mceResizeHandle]):before {
+  background: rgba(255, 255, 0, 0.25);
+  color: white;
+  content: ""attr(class)"";
+  font-size: 9px;
+  opacity: .3;
+  padding: 0px 3px;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(-7px);
+  transition: opacity 200ms;
+}
+*:not(body):hover:before {
+  opacity: 1;
+}

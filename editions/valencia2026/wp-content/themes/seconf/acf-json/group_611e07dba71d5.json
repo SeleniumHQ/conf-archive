@@ -1,0 +1,106 @@
+{
+    "key": "group_611e07dba71d5",
+    "title": "Clones",
+    "fields": [
+        {
+            "key": "field_611e1c763066c",
+            "label": "padding",
+            "name": "pad",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "025": ".25",
+                "05": ".5",
+                "075": ".75",
+                "1": "1",
+                "2": "2",
+                "3": "3",
+                "4": "4",
+                "5": "5",
+                "6": "6",
+                "7": "7",
+                "8": "8",
+                "9": "9",
+                "10": "10",
+                "11": "11",
+                "12": "12",
+                "13": "13",
+                "14": "14",
+                "15": "15"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6397be21f1544",
+            "label": "color",
+            "name": "color",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "greenA": "greenA <svg class=\"clone-color-bar\"><rect fill=\"#00B56C\"><\/rect><\/svg>",
+                "greenB": "greenB <svg class=\"clone-color-bar\"><rect fill=\"#77EFA3\"><\/rect><\/svg>",
+                "yellowA": "yellowA <svg class=\"clone-color-bar\"><rect fill=\"#FFB000\"><\/rect><\/svg>",
+                "yellowB": "yellowB <svg class=\"clone-color-bar\"><rect fill=\"#FFD93F\"><\/rect><\/svg>",
+                "purpleA": "purpleA <svg class=\"clone-color-bar\"><rect fill=\"#8072E0\"><\/rect><\/svg>",
+                "purpleB": "purpleB <svg class=\"clone-color-bar\"><rect fill=\"#A192F7\"><\/rect><\/svg>",
+                "navyA": "navyA <svg class=\"clone-color-bar\"><rect fill=\"#1E3861\"><\/rect><\/svg>",
+                "navyB": "navyB <svg class=\"clone-color-bar\"><rect fill=\"#88BAF2\"><\/rect><\/svg>",
+                "gray5": "gray5 <svg class=\"clone-color-bar\"><rect fill=\"#1B1C22\"><\/rect><\/svg>",
+                "gray4": "gray4 <svg class=\"clone-color-bar\"><rect fill=\"#22242B\"><\/rect><\/svg>",
+                "gray3": "gray3 <svg class=\"clone-color-bar\"><rect fill=\"#808086\"><\/rect><\/svg>",
+                "gray2": "gray2 <svg class=\"clone-color-bar\"><rect fill=\"#92A7A5\"><\/rect><\/svg>",
+                "gray1": "gray1 <svg class=\"clone-color-bar\"><rect fill=\"#F1F1F1\"><\/rect><\/svg>",
+                "white": "white <svg class=\"clone-color-bar\" style=\"border: solid #C6C6C6 1px;\"><rect fill=\"#FFF\"><\/rect><\/svg>"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 1,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "nav_menu",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1670889021
+}

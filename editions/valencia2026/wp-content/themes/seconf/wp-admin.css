@@ -1,0 +1,538 @@
+/*
+Theme Name: Admin Tweaks
+Author: None
+*/
+
+/* VARIABLES */
+:root {
+  --primary: #264575;
+  --secondary: #8072E0;
+  --tertiary: #00B56C;
+}
+
+/* GLOBAL ----------------------------------------- */
+
+::-webkit-input-placeholder { color: #cbcbcb; }
+::-moz-placeholder          { color: #cbcbcb; }
+:-ms-input-placeholder      { color: #cbcbcb; }
+
+code, kbd {
+  padding: 0px 5px 2px 4px;
+  font-size: 0.9em;
+}
+
+.wp-core-ui .button-primary {
+  background: var(--tertiary);
+  border-color: var(--tertiary);
+}
+
+
+/* WORDPRESS MENU ----------------------------------------- */
+
+/*
+Fade back links on sidebar so clients can still be 'admin' while being discouraged from tweaking WP, plugins, etc.
+- Using Admin Menu Editor plugin (Settings > Menu Editor) add class "make-links-below-this-faint" to last fully visible menu link
+- Be sure to delete default separator above Comments otherwise it will block items below it
+*/
+#adminmenu .make-links-below-this-faint {
+  min-height: 0px !important;
+  border-top: solid #484d52 2px;
+  margin-top: 2px;
+  padding-top: 10px;
+}
+#adminmenu .make-links-below-this-faint a {
+  pointer-events: none;
+}
+#adminmenu .make-links-below-this-faint .wp-menu-image {
+  display: none;
+}
+#adminmenu .make-links-below-this-faint + .menu-top .wp-menu-name, /* 1 */
+#adminmenu .make-links-below-this-faint + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top .wp-menu-name, /* 2 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 3 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 4 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 5 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 6 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 7 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 8 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 9 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 10 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 11 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 12 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 13 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 14 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 15 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 16 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 17 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 18 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 19 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image,
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-name, /* 20 */
+#adminmenu .make-links-below-this-faint + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top + .menu-top .wp-menu-image {
+  opacity: .3;
+}
+/* back to normal on hover */
+#adminmenu .menu-top:not(.wp-menu-open):hover .wp-menu-name,
+#adminmenu .menu-top:not(.wp-menu-open):hover .wp-menu-image {
+  opacity: 1 !important;
+}
+
+
+/* DASHBOARD ----------------------------------------- */
+
+/* Remove dotted lines around placeholders when no widgets are enabled  */
+.metabox-holder .postbox-container .empty-container {
+  border: 0;
+}
+
+
+/* POST LISTING ----------------------------------------- */
+
+/* when showing Admin Columns image, make sure it doesn't get cut off if larger than column width  */
+.ac-image:not(body) img {
+  max-width: 100% !important;
+}
+
+.acf-input .image-wrap img {
+  min-width: unset !important;
+  min-height: unset !important;
+}
+.acf-image-uploader .image-wrap img[src$=".svg"] {
+  min-height: 100px !important;
+  min-width: 100px !important;
+}
+
+/* Admin Columns icon actions, hide  */
+.column-actions .w3tc_flush_post {
+  display: none;
+}
+
+/* When using icons for actions */
+.column-actions .cpac_use_icons+.hidden+.row-actions {
+  display: flex;
+}
+/* hide: clone */
+.column-actions .cpac_use_icons+.hidden+.row-actions>span.clone {
+  display: none;
+}
+/* edit */
+.column-actions .cpac_use_icons+.hidden+.row-actions>span.edit {
+  order: -6;
+}
+/* view */
+.column-actions .cpac_use_icons+.hidden+.row-actions>span.view {
+  order: -5;
+}
+/* quick edit */
+.column-actions .cpac_use_icons+.hidden+.row-actions>span.inline {
+  order: -4;
+}
+
+/* new draft */
+.column-actions .cpac_use_icons+.hidden+.row-actions>span.edit_as_new_draft {
+  order: -3
+}
+.column-actions .cpac_use_icons+.hidden+.row-actions>span.edit_as_new_draft a {
+  text-indent: -1000px;
+}
+.column-actions .cpac_use_icons+.hidden+.row-actions>span.edit_as_new_draft a:before {
+  content: "\f502";
+}
+/* trash */
+.column-actions .cpac_use_icons+.hidden+.row-actions>span.trash {
+  order: 0;
+}
+
+/* Directories Pro */
+/* hide "featured" filter */
+.drts_entity_featured {
+  display: none;
+}
+
+
+/* SINGLE: ACF METABOXES ----------------------------------------- */
+
+.acf-fields>.acf-field {
+  padding: 13px 12px;
+  border: none;
+}
+
+.acf-field {
+  margin: 13px 0 7px;
+}
+
+/* field description (only within Data Columns layout) */
+.acf-field-5c7342d26d856 .acf-field p.description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: .8;
+}
+
+/* hide ACF Column field (shown initially before column scripts get injected into page) */
+.acf-field-column {
+  display: none;
+}
+
+/* within ACF column, better spacing between fields that have width */
+.acf-field-columngroup .acf-field[data-width] {
+  padding-right: 0.5rem;
+  border: 0 !important;
+}
+
+/* wrapper around flexible content item */
+.acf-flexible-content .layout {
+  border: solid #bdb9b9 1px;
+}
+
+/* Accordion title (toggler) */
+.acf-label.acf-accordion-title {
+  background: #f5f5f5;
+  border-bottom: solid #bdb9b9 1px;
+  font-weight: 600;
+}
+
+/* "Stylized UI" true/false checkbox */
+.acf-switch {
+  height: 26px;
+}
+.acf-switch span {
+  padding: 2px 10px;
+}
+
+/* change bg of every other repeater row */
+tr.acf-row:nth-child(even) > .acf-fields {
+  background-color: #f9f9f9;
+}
+
+/* hide "Edit field group" cog to prevent accidental editing */
+.acf-hndle-cog {
+  display: none !important;
+}
+
+/* ACF metabox headings */
+.postbox-header {
+  background: var(--primary);
+  color: #FFF;
+}
+.postbox-header .hndle {
+  color: #FFF;
+}
+
+/* Flexible content headings */
+.acf-fc-layout-handle {
+  background: var(--secondary);
+  font-weight: bold;
+  color: #FFF !important;
+}
+
+/* Nested flexible content headings */
+.acf-flexible-content .acf-flexible-content .acf-fc-layout-handle {
+  background: var(--primary);
+  font-weight: bold;
+  color: #FFF !important;
+}
+
+/* repeater left/right sides (make thinner) */
+.acf-repeater .acf-row-handle {
+  width: 12px;
+  padding: 6px;
+}
+
+/* repeater: if collapse icon exists, make sure it's always visible */
+a.acf-icon.-collapse {
+  display: block !important;
+}
+a.acf-icon.-collapse:hover,
+a.acf-icon.-collapse:focus {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+/* and style when collapses */
+.-collapsed a.acf-icon.-collapse {
+  color: white;
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.postbox .handle-order-higher,
+.postbox .handle-order-lower,
+.postbox .handlediv,
+.accordion-section-title:after,
+.handlediv,
+.item-edit,
+.postbox .handlediv.button-link,
+.toggle-indicator,
+.acf-fc-layout-controls .acf-icon {
+  color: white;
+  background: transparent !important;
+  opacity: .8;
+}
+
+
+/* File field -------- */
+/* tighter note */
+.acf-file-uploader .file-info {
+  padding: 4px 7px;
+}
+.acf-file-uploader .file-wrap {
+  min-height: 60px;
+}
+/* smaller icon */
+.acf-file-uploader .file-icon img {
+  max-width: 20px;
+}
+.acf-file-uploader .file-info {
+  margin-left: 42px;
+}
+
+/* Gallery field */
+.acf-gallery {
+  height: 220px !important;
+}
+
+/* wider number input to accomodate two decimal places */
+.acf-range-wrap input[type="number"] {
+  width: 60px !important;
+}
+
+/* smaller "Add Photo" button */
+[data-name="add"].button {
+  zoom: .9;
+}
+
+/* Button Group */
+.acf-button-group.-vertical label {
+  text-align: left;
+}
+.acf-button-group label.selected {
+  border-color: var(--primary);
+  background: var(--primary);
+}
+
+/* ACF Code field input */
+.acf-field-acf-code-field .CodeMirror {
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+  border-radius: 3px;
+}
+.CodeMirror-placeholder {
+  opacity: .2;
+}
+
+/* T/F toggles with "sytlized input selected" */
+.acf-switch.-on .acf-switch-slider,
+.acf-switch.-on {
+  border-color: var(--primary);
+}
+.acf-switch.-on,
+.acf-switch.-on:hover {
+  background: var(--primary);
+}
+.acf-switch .acf-switch-on {
+  text-shadow: var(--primary) 0 1px 0;
+}
+
+/* Edit Field Group: Allow larger 'Message' field */
+:root .acf-field-object-message textarea {
+  height: 500px !important;
+  width: 100% !important;
+}
+
+
+/* ACF ON CAT/TAG TERM EDIT ----------------------------------------- */
+
+/* ACF column field is poorly supported on taxnonomy pages, this is a hacky fix to make it no be totally squished */
+body.taxonomy-category.term-php [class*="acf-field-columngroup"],
+body.taxonomy-post_tag.term-php [class*="acf-field-columngroup"] {
+  width: 300% !important;
+}
+
+
+/* ACF GLOBALS ----------------------------------------- */
+
+.acf-settings-wrap h1:after {
+  content: 'After any updates here, it’s best to clear the website cache to be sure your changes are visible immediately';
+  display: inline-block;
+  background: rgb(255 0 0 / 14%);
+  font-size: 13px;
+  padding: 5px 9px;
+  margin: 10px 10px 0;
+  font-weight: 600;
+  border-radius: 1px;
+}
+
+
+/* SINGLES ----------------------------------------- */
+
+/* Publish metabox */
+div#publishing-action,
+input#publish   { width: 100%; } /* Make more promiment */
+
+/* Page Attributes metabox */
+/* hide 'Menu Orer' and help paragraph */
+.post-attributes-label[for="menu_order"], input#menu_order, #pageparentdiv p:last-child {
+  display: none;
+}
+
+/* "Add Media" buttons */
+.wp-media-buttons .button {
+  font-size: 12px;
+  height: 27px;
+}
+.wp-media-buttons .add_media span.wp-media-buttons-icon:before {
+  font-size: 16px !important;
+}
+
+/* Post Snippets plugin modal */
+[aria-describedby="post-snippets-dialog"] {
+  width: 100% !important;
+  left: auto !important;
+  max-width: 900px;
+  margin-left: 25%;
+}
+
+
+/* MEDIA ----------------------------------------- */
+
+/* stop WP from cropping thumbnail display into squares */
+.wp-core-ui .attachment .thumbnail .centered {
+  position: relative !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-core-ui .attachment .thumbnail .centered img {
+  transform: none !important;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative !important;
+}
+
+
+/* HIDE ----------------------------------------- */
+
+:root #plugins-by-dreihochzwo, /* ACF Code Field promo metabox */
+:root #wp301promo_widget, /* WP Force SSL */
+:root div[data-slug="post-snippets"], /* Post Snippets*/
+:root .ac-notice, /* Admin Columns Pro */
+:root .notice.frash-notice, /* Smush */
+:root #wpmudev-bf-common-notice, /* wpmudev */
+:root #duplicate-post-notice /* Duplicate Post */,
+:root #cpt_info_box /* Post Types Order */
+{
+  display: none !important;
+}
+
+/* ACF ADMIN HELPER CLASSES ----------------------------------------- */
+
+/* used for SVG color swatch within text/headline/bg select dropdown */
+.clone-color-bar {
+  width: 30px;
+  height: 11px;
+  margin-left: 2px;
+}
+.clone-color-bar-lightborder {
+  border: solid #C6C6C6 1px;
+}
+
+.clone-color-bar rect {
+  width: 100%;
+  height: 100%;
+}
+
+.acf-clear-left {
+  clear: left !important;
+}
+
+/* added in wp-admin-post.js, for conditionally altering content wysiwyg's to make them 50% width if columns = 2 */
+.acf-float-50 {
+  width: 50% !important;
+  float: left !important;
+}
+.acf-clear-none {
+  clear: none !important;
+}
+
+/* change height of wysiwyg content boxes */
+.h-100 .wp-editor-area,
+.h-100 .acf-editor-wrap iframe { height: 100px !important; min-height: initial; }
+.h-200 .wp-editor-area,
+.h-200 .acf-editor-wrap iframe { height: 200px !important; min-height: initial; }
+.h-300 .wp-editor-area,
+.h-300 .acf-editor-wrap iframe { height: 300px !important; min-height: initial; }
+.h-400 .wp-editor-area,
+.h-400 .acf-editor-wrap iframe { height: 400px !important; min-height: initial; }
+.h-500 .wp-editor-area,
+.h-500 .acf-editor-wrap iframe { height: 500px !important; min-height: initial; }
+
+/* Visual example of columns added within 'Columns' dropdown of flexible content */
+.adminCols {
+  width: 84%;
+  display: block;
+}
+[class*="adminCol-"] {
+  background: #f1f1f1;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 9px;
+  line-height: 0;
+  color: #797979 !important;
+  padding: 8px 0 8px;
+  text-align: center;
+  vertical-align: text-top;
+}
+[class*="adminCol-"]:nth-child(2) {
+  transform: translateX(5px);
+}
+.adminCol-20 { width: 20%; }
+.adminCol-30 { width: 30%; }
+.adminCol-40 { width: 40%; }
+.adminCol-50 { width: 50%; }
+.adminCol-60 { width: 60%; }
+.adminCol-70 { width: 70%; }
+.adminCol-80 { width: 80%; }
+
+/* for writing info in ACF field title but minimizing in admin area like "Theme <span class="label-meta">(3)</span>" */
+.label-meta {
+  opacity: .2;
+}
+
+/* Pull WYSIWYG up when Visual/Text tabs take up too much room */
+.acf-pullEditorUp .acf-label {
+  padding-top: 0.5rem;
+  padding-right: 108px;
+}
+.acf-pullEditorUp .acf-input {
+  margin-top: -2rem;
+}
+
+/* Make fields be on one line if width allows */
+.acf-inline {
+  display: inline-block;
+  padding-right: 1.5rem;
+}
+
+/* To hide it  */
+.acf-hide {
+  display: none;
+}

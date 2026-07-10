@@ -1,0 +1,223 @@
+/**
+ * Fonts from Google Fonts/Material Symbols.
+ * https://fonts.google.com/icons
+ * Use optical size 48 when downloading.
+ * Set fill to currentColor to use it as a text color.
+ */
+
+.sh-Icon {
+	--icon-size: var(--sh-icon-size, 20px);
+	width: var(--icon-size);
+	height: var(--icon-size);
+	display: inline-block;
+	background-size: 100%;
+	vertical-align: middle;
+	position: relative;
+}
+
+.sh-Icon--visibility {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/visibility_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--dashboard {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/dashboard_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--info {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/info_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--overview {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/overview_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--grid_view {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/grid_view_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--experiment {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/experiment_48dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--auto-delete {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/auto_delete_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--toggle-on {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/toggle_on_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--link {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/link_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--edit {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/edit_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--autorenew {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/autorenew_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--sync_arrow_down {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/sync_arrow_down_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--format_list_numbered {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/format_list_numbered_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--filter_list {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/filter_list_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--rss_feed {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/rss_feed_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--tune {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/tune_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--settings {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/settings_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--volunteer_activism {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/volunteer_activism_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--thumb_up {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/thumb_up_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--workspace_premium {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/workspace_premium_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--verified {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/verified_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--add_box {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/add_box_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--pages {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/pages_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--archive {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/archive_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--download {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/download_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--troubleshoot {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/troubleshoot_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--build {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/build_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--archive {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/archive_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--map {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/map_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--account_circle {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/account_circle_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--no_accounts {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/no_accounts_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--merge_type {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/merge_type_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--vpn_lock {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/vpn_lock_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--lock_clock {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/lock_clock_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--key {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/key_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--web {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/web_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--extension {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/extension_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--history {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/history_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--history_toggle_off {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/history_toggle_off_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--mystery {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/mystery_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--refresh {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/refresh_24dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--moving {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/moving_24dp_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--visibility_lock {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/visibility_lock_48dp__FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--help {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/help_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg);
+}
+.sh-Icon-lock {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/lock_48dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--bar_chart {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/bar_chart_48dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--keep {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/keep_48dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--keep_off {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/keep_off_48dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--mark_email_unread {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/mark_email_unread_48dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--group_add {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/group_add_48dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--preview {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/preview_48dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.sh-Icon--schedule_send {
+	background-image: url(/wp-content/plugins/simple-history/css/icons/schedule_send_48dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg);
+}

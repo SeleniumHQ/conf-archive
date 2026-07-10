@@ -1,0 +1,184 @@
+{
+    "key": "group_6300221a0716f",
+    "title": "Page Details",
+    "fields": [
+        {
+            "key": "field_6300221a09e43",
+            "label": "COL 1\/2",
+            "name": "col_12",
+            "aria-label": "",
+            "type": "column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "column-type": "1_2"
+        },
+        {
+            "key": "field_6387c6cff2834",
+            "label": "Hide hero",
+            "name": "heroHide",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-inline",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_6383b8625a7f3",
+            "label": "Type",
+            "name": "heroType",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-inline",
+                "id": ""
+            },
+            "choices": {
+                "who": "Who",
+                "what": "What",
+                "when": "When",
+                "where": "Where",
+                "why": "Why"
+            },
+            "default_value": "",
+            "return_format": "array",
+            "allow_null": 1,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_6300221a09e4e",
+            "label": "Alternate page heading",
+            "name": "heroHead",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Default is page title",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_637edd7d97405",
+            "label": "COL 1\/4",
+            "name": "",
+            "aria-label": "",
+            "type": "column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "column-type": "1_4"
+        },
+        {
+            "key": "field_6383a3bdc8ec1",
+            "label": "Hero icon",
+            "name": "heroIcon",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_64096e4932ead",
+            "label": "COL 1\/4",
+            "name": "",
+            "aria-label": "",
+            "type": "column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "column-type": "1_4"
+        },
+        {
+            "key": "field_64096e5432eae",
+            "label": "Animated icon (JSON)",
+            "name": "heroIconAnimFile",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "<em>It's good to still provide a \"Hero icon\" in case JavaScript is disabled<\/em>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1678343846
+}

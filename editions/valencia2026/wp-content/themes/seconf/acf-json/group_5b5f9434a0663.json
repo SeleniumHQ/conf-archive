@@ -1,0 +1,148 @@
+{
+    "key": "group_5b5f9434a0663",
+    "title": "Help",
+    "fields": [
+        {
+            "key": "field_5f5ec9609d890",
+            "label": "Shortcodes",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5f5ec96b9d891",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<style>\r\n.helpful { padding: 0 0 10px; }\r\n.helpful h4 { margin: 20px 0 10px; font-size: 1.3em; line-height: 1.2; }\r\n.helpful h4:first-child { margin-top: -5px; }\r\n.helpful h5 { margin: 20px 0 10px; font-size: 1.1em; }\r\n.helpful h5:first-child { margin-top: -.5rem; }\r\n.helpful p { opacity: .6; margin: 15px 0px; }\r\n<\/style>\r\n\r\n<div class=\"helpful\">\r\n\r\n<h4>Buttons<\/h4>\r\n<code>[button label=\"\" type=\"\" wpid=\"\" url=\"\" target=\"\" id=\"\" class=\"\" style=\"\"]<\/code>\r\n<br><br>\r\n<strong>label<\/strong> = text inside button<br>\r\n<strong>type<\/strong> = <em>default, light, forward, back, alt, alt-light<\/em><br>\r\n<strong>wpid<\/strong> = ID of Wordpress page<br>\r\n<strong>url<\/strong> = URL link instead of <em>wpid<\/em><br>\r\n<strong>target<\/strong> = <em>_blank<\/em> to open new page<br>\r\n<strong>id<\/strong> = CSS ID<br>\r\n<strong>class<\/strong> = CSS class(es)<br>\r\n<strong>style<\/strong> = Inline CSS\r\n<br><br>\r\n\r\n<h4><em>Gravity Forms<\/em> Form<\/h4>\r\n<code>[gravityform id=\"1\" title=\"false\" description=\"false\" ajax=\"true\"]<\/code><br>\r\n<strong>id<\/strong> = ID of Gravity Forms form<br>\r\n<a href=\"https:\/\/docs.gravityforms.com\/shortcodes\/\" target=\"_blank\">More info<\/a>\r\n\r\n<h4>Permanent URL<\/h4>\r\n<code>[url wpid='']<\/code><br>\r\n<strong>wpid<\/strong> = ID of Wordpress page\/post\/event\r\n<br><br>\r\nExample: <code>[url wpid='324']<\/code> would generate a the full URL to the About page\r\n<\/div>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b5f94564010b",
+            "label": "Brand Colors",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b5f95a37365f",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<em>For use in buttons or CSS classes such as text-white, link-<\/em><br><br>\r\n<svg class=\"clone-color-bar\"><rect fill=\"#001649\"><\/rect><\/svg>&nbsp;&nbsp;bluedark #001649\r\n<svg class=\"clone-color-bar\"><rect fill=\"#0572ED\"><\/rect><\/svg>&nbsp;&nbsp;blue #0572ED\r\n<svg class=\"clone-color-bar\"><rect fill=\"#5CFAFF\"><\/rect><\/svg>&nbsp;&nbsp;bluebright #5CFAFF\r\n<svg class=\"clone-color-bar\"><rect fill=\"#000000\"><\/rect><\/svg>&nbsp;&nbsp;black #000000\r\n<svg class=\"clone-color-bar\"><rect fill=\"#707070\"><\/rect><\/svg>&nbsp;&nbsp;gray75 #707070\r\n<svg class=\"clone-color-bar\"><rect fill=\"#BFBFBF\"><\/rect><\/svg>&nbsp;&nbsp;gray50 #BFBFBF\r\n<svg class=\"clone-color-bar\"><rect fill=\"#EFEFEF\"><\/rect><\/svg>&nbsp;&nbsp;gray25 #EFEFEF\r\n<svg class=\"clone-color-bar\"><rect fill=\"#F8F7F7\"><\/rect><\/svg>&nbsp;&nbsp;gray10 #F8F7F7\r\n<svg class=\"clone-color-bar\" style=\"border: solid #C6C6C6 1px;\"><rect fill=\"#FFFFFF\"><\/rect><\/svg>&nbsp;&nbsp;white #FFFFFF",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b7269a7c05a4",
+            "label": "Helpful Tidbits",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b726b2ec05a5",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<div class=\"helpful\">\r\n\r\n<h4>To prevent words from wrapping...<\/h4>\r\n<p>Be sure to use these only within the \"Text\" tab of the editor<\/p>\r\n\r\n<h5>By adding \"&amp;nbsp;\" between two&nbsp;words:<\/h5>\r\n<p>Careful, may go off screen on mobile if too wide.<\/p>\r\n<code>Title of Section and Let's Keep Last Two Words&amp;nbsp;Together<\/code>\r\n\r\n<h5>By wrapping in &lt;span&gt; tag with \"md-nowrap\":<\/h5>\r\n<p>md- limits it to larger screens, or use just \"nowrap\" for all screens (but may go offscreen on mobile if too wide)<\/p>\r\n<code>&lt;h5&gt;Meet our new staff member &lt;span class=\"md-nowrap\">Becky Beckerson&lt;\/span&gt;&lt;\/h5&gt;<\/code>\r\n\r\n<\/div>",
+            "new_lines": "",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 50,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661930477
+}
