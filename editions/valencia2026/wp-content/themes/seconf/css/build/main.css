@@ -1624,7 +1624,7 @@ html.themeIsLight .hero {
 
 @font-face {
   font-family: "icomoon-seconf-buttons";
-  src: url("/wp-content/themes/seconf/iconfonts/icomoon-seconf-buttons.ttf?aszvts") format("truetype"), url("/wp-content/themes/seconf/iconfonts/icomoon-seconf-buttons.woff?aszvts") format("woff"), url("/wp-content/themes/seconf/iconfonts/icomoon-seconf-buttons.svg?aszvts#icomoon-seconf-buttons") format("svg");
+  src: url("/conf-archive/editions/valencia2026/wp-content/themes/seconf/iconfonts/icomoon-seconf-buttons.ttf?aszvts") format("truetype"), url("/conf-archive/editions/valencia2026/wp-content/themes/seconf/iconfonts/icomoon-seconf-buttons.woff?aszvts") format("woff"), url("/conf-archive/editions/valencia2026/wp-content/themes/seconf/iconfonts/icomoon-seconf-buttons.svg?aszvts#icomoon-seconf-buttons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;

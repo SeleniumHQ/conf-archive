@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "post-snippets";
-  src:url("/wp-content/plugins/post-snippets/assets/fonts/post-snippets.eot");
-  src:url("/wp-content/plugins/post-snippets/assets/fonts/post-snippets.eot#iefix") format("embedded-opentype"),
-    url("/wp-content/plugins/post-snippets/assets/fonts/post-snippets.woff") format("woff"),
-    url("/wp-content/plugins/post-snippets/assets/fonts/post-snippets.ttf") format("truetype"),
-    url("/wp-content/plugins/post-snippets/assets/fonts/post-snippets.svg#post-snippets") format("svg");
+  src:url("/conf-archive/editions/valencia2026/wp-content/plugins/post-snippets/assets/fonts/post-snippets.eot");
+  src:url("/conf-archive/editions/valencia2026/wp-content/plugins/post-snippets/assets/fonts/post-snippets.eot#iefix") format("embedded-opentype"),
+    url("/conf-archive/editions/valencia2026/wp-content/plugins/post-snippets/assets/fonts/post-snippets.woff") format("woff"),
+    url("/conf-archive/editions/valencia2026/wp-content/plugins/post-snippets/assets/fonts/post-snippets.ttf") format("truetype"),
+    url("/conf-archive/editions/valencia2026/wp-content/plugins/post-snippets/assets/fonts/post-snippets.svg#post-snippets") format("svg");
   font-weight: normal;
   font-style: normal;
 

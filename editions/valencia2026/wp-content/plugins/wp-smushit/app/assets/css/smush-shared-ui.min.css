@@ -409,8 +409,8 @@
 }
 @font-face {
   font-family: "wpmudev-plugin-icons";
-  src: url(/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.eot);
-  src: url(/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.eot) format("embedded-opentype"),url(/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.ttf) format("truetype"),url(/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.woff) format("woff"),url(/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.woff2) format("woff2"),url(/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.svg) format("svg");
+  src: url(/conf-archive/editions/valencia2026/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.eot);
+  src: url(/conf-archive/editions/valencia2026/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.eot) format("embedded-opentype"),url(/conf-archive/editions/valencia2026/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.ttf) format("truetype"),url(/conf-archive/editions/valencia2026/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.woff) format("woff"),url(/conf-archive/editions/valencia2026/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.woff2) format("woff2"),url(/conf-archive/editions/valencia2026/wp-content/plugins/wp-smushit/app/assets/fonts/wpmudev-plugin-icons.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }

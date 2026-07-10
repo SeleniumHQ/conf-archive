@@ -37,8 +37,8 @@
 	mask-repeat: no-repeat;
 	-webkit-mask-position: center;
 	mask-position: center;
-	-webkit-mask-image: url(/wp-content/plugins/acf-theme-code-pro/assets/icon-code.svg);
-	mask-image: url(/wp-content/plugins/acf-theme-code-pro/assets/icon-code.svg);
+	-webkit-mask-image: url(/conf-archive/editions/valencia2026/wp-content/plugins/acf-theme-code-pro/assets/icon-code.svg);
+	mask-image: url(/conf-archive/editions/valencia2026/wp-content/plugins/acf-theme-code-pro/assets/icon-code.svg);
 }
 
 /* Wrapper for the meta bar above field code and the registration tool */
@@ -113,7 +113,7 @@ pre[class*="language-"] {
 	right: 24px;
 	width: 12px;
 	height: 20px;
-	background-image: url(/wp-content/plugins/acf-theme-code-pro/assets/icon-clipboard.svg);
+	background-image: url(/conf-archive/editions/valencia2026/wp-content/plugins/acf-theme-code-pro/assets/icon-clipboard.svg);
 }
 
 /* Copy all button (ACF Edit field group page) */
@@ -122,7 +122,7 @@ pre[class*="language-"] {
     right: 20px;
 	width: 20px;
 	height: 20px;
-	background-image: url(/wp-content/plugins/acf-theme-code-pro/assets/icon-clipboard.svg);
+	background-image: url(/conf-archive/editions/valencia2026/wp-content/plugins/acf-theme-code-pro/assets/icon-clipboard.svg);
 }
 
 /* All copy buttons: Hover state */

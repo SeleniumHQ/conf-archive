@@ -44,7 +44,7 @@
 	right:14px;
 	width: 12px;
 	height: 20px;
-	background: url(/wp-content/plugins/acf-theme-code-pro/assets/icon-clipboard.svg) center center no-repeat;
+	background: url(/conf-archive/editions/valencia2026/wp-content/plugins/acf-theme-code-pro/assets/icon-clipboard.svg) center center no-repeat;
 	background-size: 12px auto;
 	display: block;
 	opacity: 0.3;
@@ -235,7 +235,7 @@ body.post-type-acf .acftc-location-settings .acf-field select  {
 	right:10px;
 	width: 20px;
 	height: 20px;
-	background: url(/wp-content/plugins/acf-theme-code-pro/assets/icon-clipboard.svg) center center no-repeat;
+	background: url(/conf-archive/editions/valencia2026/wp-content/plugins/acf-theme-code-pro/assets/icon-clipboard.svg) center center no-repeat;
 	background-size: 12px auto;
 	display: block;
 	opacity: 0.3;

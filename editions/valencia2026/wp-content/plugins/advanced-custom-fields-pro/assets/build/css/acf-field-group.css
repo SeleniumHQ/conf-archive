@@ -189,13 +189,13 @@
   text-indent: 500%;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-copy.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-copy.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-copy.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-copy.svg");
   background-size: cover;
 }
 #acf-field-group-fields .acf-field-list .copyable:not(.copy-unsupported).copied:hover:after {
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-check-circle-solid.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-check-circle-solid.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-check-circle-solid.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-check-circle-solid.svg");
   background-color: #49ad52;
 }
 #acf-field-group-fields .acf-field-list .no-fields-message {
@@ -840,7 +840,7 @@ html[dir=rtl] .acf-field-object.open > .handle {
   max-width: 100%;
   padding-right: 40px;
   padding-left: 12px;
-  background-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
+  background-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
   background-position: right 10px top 50%;
   background-size: 20px;
 }
@@ -916,10 +916,10 @@ html[dir=rtl] .acf-field-object.open > .handle {
   left: 1px;
 }
 .post-type-acf-field-group input[type=radio]:checked:before, .post-type-acf-field-group input[type=radio]:focus:before {
-  background-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/field-states/radio-active.svg");
+  background-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/field-states/radio-active.svg");
 }
 .post-type-acf-field-group input[type=checkbox]:checked:before, .post-type-acf-field-group input[type=checkbox]:focus:before {
-  background-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/field-states/checkbox-active.svg");
+  background-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/field-states/checkbox-active.svg");
 }
 .post-type-acf-field-group .acf-radio-list li input[type=radio],
 .post-type-acf-field-group .acf-radio-list li input[type=checkbox],
@@ -1122,8 +1122,8 @@ html[dir=rtl] .acf-field-object.open > .handle {
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-close.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-close.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-close.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-close.svg");
   background-color: #98A2B3;
 }
 .post-type-acf-field-group .acf-input .select2-selection__clear:hover::before {
@@ -1712,8 +1712,8 @@ html[dir=rtl] .acf-field-object.open > .handle {
   text-indent: 500%;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-draggable.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-draggable.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-draggable.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-draggable.svg");
 }
 
 .rtl .acf-field-list .acf-sortable-handle:before {
@@ -1751,8 +1751,8 @@ html[dir=rtl] .acf-field-object.open > .handle {
   text-indent: 500%;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
 }
 .acf-field-object .li-field-label:hover:before {
   cursor: pointer;
@@ -1765,20 +1765,20 @@ html[dir=rtl] .acf-field-object.open > .handle {
 .rtl .acf-field-object .li-field-label:before {
   left: 0;
   right: 6px;
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
 }
 .rtl .acf-field-object.open .li-field-label:before {
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
 }
 .rtl .acf-field-object.open .acf-input-sub .li-field-label:before {
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-right.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-right.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-right.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-right.svg");
 }
 .rtl .acf-field-object.open .acf-input-sub .acf-field-object.open .li-field-label:before {
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-down.svg");
 }
 
 .acf-thead .li-field-label {
@@ -1990,8 +1990,8 @@ html[dir=rtl] .acf-field-object.open > .handle {
   text-indent: 500%;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-close-circle.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-close-circle.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-close-circle.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-close-circle.svg");
 }
 .post-type-acf-field-group #acf-popup .acf-popup-box .title .acf-icon:hover:before {
   background-color: #0783BE;
@@ -2065,8 +2065,8 @@ html[dir=rtl] .acf-field-object.open > .handle {
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-time.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-time.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-time.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-time.svg");
 }
 
 /*----------------------------------------------------------------------------
@@ -2428,8 +2428,8 @@ html[dir=rtl] .acf-field-object.open > .handle {
 *
 *---------------------------------------------------------------------------------------------*/
 .post-type-acf-field-group .acf-field-object.open > .handle > .acf-tbody > .li-field-label::before {
-  -webkit-mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-up.svg");
-  mask-image: url("/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-up.svg");
+  -webkit-mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-up.svg");
+  mask-image: url("/conf-archive/editions/valencia2026/wp-content/plugins/advanced-custom-fields-pro/assets/images/icons/icon-chevron-up.svg");
 }
 
 /*---------------------------------------------------------------------------------------------
